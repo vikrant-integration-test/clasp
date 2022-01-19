@@ -5,10 +5,10 @@ preRun:
         - npm run pretest
 preMerge:
   pattern:
-    - "./test/test.ts"
+    - "./build/test/files.js"
 postMerge:
   pattern:
-    - "./test/test.ts"
+    - "./build/test/files.js"
 postRun:
      command:
         - node --version
